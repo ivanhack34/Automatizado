@@ -20,21 +20,21 @@ namespace Automatizado
 
             //Seleccionar la marca del celular
 
-            driver.FindElement(By.Id("celulares")).SendKeys("Xiaomi");
+            driver.FindElement(By.Id("MainContent_celulares")).SendKeys("Xiaomi");
 
             //Seleccionar la canticada de celulares
 
-            driver.FindElement(By.Id("cantidad")).SendKeys("3");
+            driver.FindElement(By.Id("MainContent_cantidad")).SendKeys("3");
 
             //Seleccionar el metodo de pago
 
-            driver.FindElement(By.Id("efectivo")).Click();
+            driver.FindElement(By.Id("MainContent_efectivo")).Click();
 
             //Seleccionar el boton de pago
 
 
             System.Threading.Thread.Sleep(5000);
-            driver.FindElement(By.Id("pagar")).Click();
+            driver.FindElement(By.Id("MainContent_boton")).Click();
           
 
              
